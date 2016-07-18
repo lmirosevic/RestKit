@@ -55,8 +55,8 @@
     {
       "name": "Network",
       "source_files": [
-        "Code/Network",
-        "Code/Support"
+        "Code/Network/*",
+        "Code/Support/*"
       ],
       "ios": {
         "frameworks": [
@@ -91,7 +91,7 @@
     {
       "name": "UI",
       "ios": {
-        "source_files": "Code/UI",
+        "source_files": "Code/UI/*",
         "frameworks": "QuartzCore"
       },
       "osx": {
@@ -111,7 +111,7 @@
       "subspecs": [
         {
           "name": "Core",
-          "source_files": "Code/ObjectMapping/",
+          "source_files": "Code/ObjectMapping/*",
           "public_header_files": "Code/ObjectMapping"
         },
         {
@@ -138,7 +138,7 @@
         },
         {
           "name": "CoreData",
-          "source_files": "Code/CoreData",
+          "source_files": "Code/CoreData/*",
           "frameworks": "CoreData",
           "dependencies": {
             "RestKit/ObjectMapping/Core": [
@@ -150,7 +150,7 @@
     },
     {
       "name": "Testing",
-      "source_files": "Code/Testing"
+      "source_files": "Code/Testing/*"
     }
   ]
 }
