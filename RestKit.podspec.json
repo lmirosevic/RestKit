@@ -91,7 +91,7 @@
     {
       "name": "UI",
       "ios": {
-        "source_files": "Code/UI/*",
+        "source_files": "Code/UI/*.{h,m}",
         "frameworks": "QuartzCore"
       },
       "osx": {
