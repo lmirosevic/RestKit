@@ -91,7 +91,10 @@
     {
       "name": "UI",
       "ios": {
-        "source_files": "Code/UI/*.{h,m}",
+        "source_files": [
+          "Code/UI/UI.h",
+          "Code/UI/**/*"
+        ],
         "frameworks": "QuartzCore"
       },
       "osx": {
@@ -111,7 +114,10 @@
       "subspecs": [
         {
           "name": "Core",
-          "source_files": "Code/ObjectMapping/*",
+          "source_files": [
+            "Code/ObjectMapping.h",
+            "Code/ObjectMapping/**/*"
+          ],
           "public_header_files": "Code/ObjectMapping"
         },
         {
@@ -138,7 +144,10 @@
         },
         {
           "name": "CoreData",
-          "source_files": "Code/CoreData/*",
+          "source_files": [
+            "Code/CoreData.h", 
+            "Code/CoreData/**/*"
+          ],
           "frameworks": "CoreData",
           "dependencies": {
             "RestKit/ObjectMapping/Core": [
@@ -150,7 +159,7 @@
     },
     {
       "name": "Testing",
-      "source_files": "Code/Testing/*"
+      "source_files": "Code/Testing/**"
     }
   ]
 }
